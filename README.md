@@ -1,4 +1,4 @@
-﻿# Rent a bike
+# Rent a bike
 
 ##projet site web location vélo.
 
