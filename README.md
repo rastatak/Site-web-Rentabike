@@ -1,5 +1,5 @@
-﻿# Rent a bike
+# Rent a bike
 
-##projet site web location vélo.
+## Projet site web location vélo.
 
 
