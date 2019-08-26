@@ -89,7 +89,7 @@
 
 		<ol class="breadcrumb">
 			<li><a href="index.html">Acceuil</a></li>
-			<li class="text-light active">/ Location</li>
+			<li class="text-dark active">/ Location</li>
 		</ol>
 
 		<div class="row">
@@ -103,7 +103,7 @@
 
 				<br>
 				<form>
-					<div class="default-select" id="default-select"">
+					<div class="default-select" id="default-select">
 									<select>
 										<option value="" disabled selected hidden>Ville</option>
 										<option value=" 1">Lille</option>
@@ -151,7 +151,11 @@
 							<label class="checkbox"> </label>
 						</div>
 						<div class="col-sm-6 text-right">
-							<input class="btn btn-success" type="submit" value="PAYER">
+
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#paiementModal">
+               PAYER
+            </button>
+							
 						</div>
 					</div>
 
@@ -284,13 +288,86 @@
                    </div>
             </div>
             <div class="modal-footer d-flex justify-content-center">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal1">Retour</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Retour</button>
               <a type="button" class="btn btn-success" href="location.html" >Louez moi !</a>
             </div>
           </div>
         </div>
       </div>
 
+
+
+
+<!-- Modal cb -->
+<div class="modal fade" id="paiementModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel">Paiement</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="creditCardForm">
+          <div class="heading">
+              <h1>Payer</h1>
+          </div>
+          <div class="payment">
+              <form>
+                  <div class="form-group owner">
+                      <label for="owner">Nom du titulaire</label>
+                      <input type="text" class="form-control" id="owner">
+                  </div>
+                  <div class="form-group CVV">
+                      <label for="cvv">CVV</label>
+                      <input type="text" class="form-control" id="cvv">
+                  </div>
+                  <div class="form-group" id="card-number-field">
+                      <label for="cardNumber">Card Number</label>
+                      <input type="text" class="form-control" id="cardNumber">
+                  </div>
+                  <div class="form-group" id="expiration-date">
+                      <label>Expiration Date</label>
+                      <select>
+                          <option value="01">January</option>
+                          <option value="02">February </option>
+                          <option value="03">March</option>
+                          <option value="04">April</option>
+                          <option value="05">May</option>
+                          <option value="06">June</option>
+                          <option value="07">July</option>
+                          <option value="08">August</option>
+                          <option value="09">September</option>
+                          <option value="10">October</option>
+                          <option value="11">November</option>
+                          <option value="12">December</option>
+                      </select>
+                      <select>
+                          <option value="16"> 2016</option>
+                          <option value="17"> 2017</option>
+                          <option value="18"> 2018</option>
+                          <option value="19"> 2019</option>
+                          <option value="20"> 2020</option>
+                          <option value="21"> 2021</option>
+                      </select>
+                  </div>
+                  <div class="form-group" id="credit_cards">
+                      <img src="assets/images/visa.jpg" id="visa">
+                      <img src="assets/images/mastercard.jpg" id="mastercard">
+                      <img src="assets/images/amex.jpg" id="amex">
+                  </div>
+                  <div class="form-group" id="pay-now">
+                      <button type="submit" class="btn btn-success" id="confirm-purchase">Confirm</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

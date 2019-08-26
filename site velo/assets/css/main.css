@@ -1,18 +1,19 @@
-/* Header */
-
-/* #head {
-     background: #181015 url(https://picsum.photos/id/212/2000/1394) no-repeat; 
-    background-size: cover;
-    min-height: 420px;
+*{
+    box-sizing: border-box;
+}
+.toto{
+    min-height: 140px ;
     text-align: center;
-    padding-top: 240px;
-    color: white;
-    font-family: "Open sans", Helvetica, Arial;
-    font-weight: 300; 
-} */
+    margin:auto;
+}
+h1{
+    text-shadow: 1px 0 0 #17A2B8, -1px 0 0#fff, 0 1px 0 #fff, 0 -1px 0 #17A2B8, 1px 1px #17A2B8,
+     -1px -1px 0 #17A2B8, 1px -1px 0 #17A2B8, -1px 1px 0 #17A2B8;
+}
 h1,h2,nav {
     font-family: 'Lobster', cursive !important ;
     font-size:4em;
+  
   
 }
 h3{
@@ -30,6 +31,7 @@ p{
     -webkit-transform: rotate(-5deg);
     -khtml-transform: rotate(-5deg);
     -ms-transform: rotate(-5deg);
+    margin-top: -18px;
 }
 
 .velo-container .side-column {
@@ -55,59 +57,25 @@ p{
 #navbarNavDropdown{
      margin-top: -37px !important;
 }
-#head.secondary {
-    height: 100px;
-    min-height: 100px;
-    padding-top: 0px;
-}
 
-#head .lead {
-    font-family: "Open sans", Helvetica, Arial;
-    font-size: 44px;
-    margin-bottom: 6px;
-    color: white;
-    line-height: 1.15em;
+#marginForBike{
+    margin-top: 8.5rem !important; 
 }
+ #imgVille img{
+    box-shadow: 5px -3px 26px -6px rgba(0, 0, 0, 0.68);
+    margin-top:15px;
+    transition: 1s;
+ }
+#imgVille img:hover{
+    transform: scale(1.1);
+    transition: transform 1.5s;
 
-#head .tagline {
-    color: rgba(255, 255, 255, 0.75);
-    margin-bottom: 25px;
+   
 }
-
-#head .tagline a {
-    color: #fff;
-}
-
-#head .btn {
-    margin-bottom: 10px;
-}
-
-#head .btn-default {
-    text-shadow: none;
-    background: transparent;
-    color: rgba(255, 255, 255, .5);
-    -webkit-box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .5);
-    -moz-box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .5);
-    box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .5);
-    background: transparent;
-}
-
-#head .btn-default:hover,
-#head .btn-default:focus {
-    color: rgba(255, 255, 255, .8);
-    -webkit-box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .8);
-    -moz-box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .8);
-    box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .8);
-    background: transparent;
-}
-
-#head .btn-default:active,
-#head .btn-default.active {
-    color: #fff;
-    -webkit-box-shadow: inset 0px 0px 0px 3px #fff;
-    -moz-box-shadow: inset 0px 0px 0px 3px #fff;
-    box-shadow: inset 0px 0px 0px 3px #fff;
-    background: transparent;
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
 }
 
 @media (min-width: 767px) {
@@ -140,6 +108,7 @@ p{
    
 
 }
+
 
 /* Autohide navbar */
 
@@ -272,9 +241,7 @@ img.pull-left {
 
 
 
-/* Main content block */
 
-.maincontent {}
 
 
 /* Sidebars */
