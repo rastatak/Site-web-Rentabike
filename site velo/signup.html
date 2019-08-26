@@ -8,13 +8,12 @@
     <meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
 
     <title>Rent a bike - Location vélo </title>
-
+    <script src="https://kit.fontawesome.com/c8975d4899.js"></script>
     <link rel="shortcut icon" href="assets/images/gt_favicon.png">
-
-    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum|Lobster&display=swap" rel="stylesheet"> 
+    
     <!-- Custom styles for our template -->
     <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -27,86 +26,80 @@
 </head>
 
 <body>
-		<!DOCTYPE html>
-		<html lang="fr">
-		
-		<head>
-			<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<meta name="description" content="">
-			<meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
-		
-			<title>Rent a bike - Location vélo </title>
-		
-			<link rel="shortcut icon" href="assets/images/gt_favicon.png">
-		
-			<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-			<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-			<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-		
-			<!-- Custom styles for our template -->
-			<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
-			<link rel="stylesheet" href="assets/css/main.css">
-		
-			<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-			<!--[if lt IE 9]>
-			<script src="assets/js/html5shiv.js"></script>
-			<script src="assets/js/respond.min.js"></script>
-			<![endif]-->
-		</head>
-		
-		<body >
-				<header class="row" >
-		
-						<div class="col-md-12 mt-2 col-12 ">
-							<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
-								<a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="m-auto" width="150"
-										height="145"></a>
-								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-									aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-									<span class="navbar-toggler-icon"></span>
-								</button>
-								<div class="collapse navbar-collapse" id="navbarNavDropdown">
-									<ul class="navbar-nav form-inline">
-										<li class="nav-item ">
-											<a class="nav-link  h3" href="index.html">Acceuil<span
-													class="sr-only">(current)</span></a>
-										</li>
-										<li class="nav-item  ">
-											<a class="nav-link h3" href="location.html">Location</a>
-										</li>
-										<li class="nav-item ">
-											<a class="nav-link h3" href="velo.html">Velo</a>
-										</li>
-									</ul>
-								</div>
-								<a  href="signin.html"  type="button" class="btn border" >
-										<i  class="text-light"  aria-hidden="true"  >SIGN IN / SIGN UP</i>
-										<span class="sr-only"></span>
-									</a>
-							</nav>
-						</div> 
+<!--------bar de navigation -------->
+		<!--------bar de navigation -------->
+	<header id="mainnav" class="row">
+        <!--nav bar et carousel -->
+                <!--------bar de navigation -------->
+                <div class="col-12 ">
+                
+                    <div id="logo" class="row ml-3">
+                        
+                            <a class="navbar-brand" href="#"><img src="assets/images/logo.png"  width="150"
+                            height="145"></a>  
+                            <h1 class="text-success">Rent a bike<h2>
+                        
+                    </div>
 
-			
-					</header>
+                    
+
+                    <div class="col-12">                    
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+                        
+                
+                
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav form-inline">
+                        <li class="nav-item ">
+                            <a class="nav-link  h2" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active ">
+                            <a class="nav-link h2" href="location.html">Location</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-link h2" data-toggle="dropdown" href="#"
+                                role="button" aria-haspopup="true" aria-expanded="false">Nos vélos</a>
+                            <div class="dropdown-menu">
+                                <a class="nav-link h5 ml-3" href="#" data-toggle="modal" data-target="#exampleModalScrollable">Vélo classique</a>
+                                <a class="nav-link h5 ml-3" href="#" data-toggle="modal" data-target="#exampleModalScrollable1" >vélo électrique</a>
+
+                            </div>
+                        </li>
+                        </ul>
+                        </div>
+                        <a href="signin.html" type="button" class="btn btn-success">
+                        <i class="fas fa-user"></i>
+                        <span class="sr-only"></span>
+                        </a>
+                        </nav>
+
+                    </div>
+
+
+
+                </div>
+                <!--------fin bar de navigation -------->
+			</header>
 
 	<!-- container -->
 	<div class="container">
 
 		<ol class="breadcrumb">
-			<li><a href="index.html"> Acceuil </a> </li>/
-			<li class="active"> Inscription </li>
+			<li><a href="index.html"> Acceuil </a> </li>
+			<li class="active">/ Inscription </li>
 		</ol>
 
 		<div class="row">
 			
 			<!-- Article main content -->
-			<article class="col-xs-12 maincontent">
-				<header class="page-header">
-					<h1 class="page-title">Inscription</h1>
-				</header>
+			<article class="col-12 maincontent">
 				
-				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+				
+				<div class="col-12 w-75 mx-auto">
 					<div class="panel panel-default">
 						<div class="panel-body">
 							<h3 class="thin text-center">Inscrivez vous</h3>
@@ -182,22 +175,21 @@
 					</div>
 
 					<div class="col-md-3 widget">
-						<h3 class="widget-title">Follow me</h3>
-						<div class="widget-body">
-							<p class="follow-me-icons clearfix">
-								<a href=""><i class="fa fa-twitter fa-2"></i></a>
-								<a href=""><i class="fa fa-dribbble fa-2"></i></a>
-								<a href=""><i class="fa fa-github fa-2"></i></a>
-								<a href=""><i class="fa fa-facebook fa-2"></i></a>
-							</p>	
-						</div>
+					
 					</div>
 
 					<div class="col-md-6 widget">
-						<h3 class="widget-title">Text widget</h3>
+						
 						<div class="widget-body">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>
-							<p>Eius consequatur nihil quibusdam! Laborum, rerum, quis, inventore ipsa autem repellat provident assumenda labore soluta minima alias temporibus facere distinctio quas adipisci nam sunt explicabo officia tenetur at ea quos doloribus dolorum voluptate reprehenderit architecto sint libero illo et hic.</p>
+						<p>
+
+								Aujourd’hui, les villes font de plus en plus d’efforts pour réintroduire le vélo dans le paysage urbain. Entre les pistes cyclables, 
+								les parking à vélo, les vélibs et les subventions qui fleurissent un peu partout, qui a encore une bonne raison de ne pas s’y mettre ? 
+								Cependant, attention au traffic qui peut être turbulent dans les grandes villes. Un bon vélo de ville se doit d’être fiable et bien équipé
+								 (éclairages, garde-boue, sonnette, dynamo de moyeu, béquille...). Lorsque l’on rentre du travail à vélo et que les rues deviennent plus sombres,
+								  il est primordial de bien voir et de bien être vu des autres usagers. Puis, avouons-le, on adore le design un peu retro des vélos de ville 
+								  hollandais, ceux qui ont le plus la côte en ce moment. Vous n’avez plus à choisir entre sécurité et look stylé !
+							</p>
 						</div>
 					</div>
 
@@ -231,16 +223,72 @@
 			</div>
 		</div>
 	</footer>	
-		
+		    <!--modal vélo classique-->
+          <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalScrollableTitle">Vélo classique</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <img class="mt-5" src="assets/images/velo.jpg">
+                    <div class="text-center">
+                        <h2>Vélo classique</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum tempora error itaque hic dolor ipsum corrupti    quidem laudantium nulla fugit. Quibusdam et, dignissimos molestiae delectus officia asperiores alias architecto placeat.</p>
+                   </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Retour</button>
+              <a type="button" class="btn btn-success" href="location.html">Louez moi !</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal vélo electrique-->
+      <div class="modal fade" id="exampleModalScrollable1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalScrollableTitle1">Vélo électrique</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <img class="mt-5" src="assets/images/velo1.jpg">
+                    <div class="text-center">
+                        <h2>Vélo électrique</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum tempora error itaque hic dolor ipsum corrupti    quidem laudantium nulla fugit. Quibusdam et, dignissimos molestiae delectus officia asperiores alias architecto placeat.</p>
+                   </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal1">Retour</button>
+              <a type="button" class="btn btn-success" href="location.html">Louez moi !</a>
+            </div>
+          </div>
+        </div>
+      </div>	
 
 
 
 
-	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="assets/js/headroom.min.js"></script>
-	<script src="assets/js/jQuery.headroom.min.js"></script>
-	<script src="assets/js/template.js"></script>
+	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="assets/js/headroom.min.js"></script>
+    <script src="assets/js/jQuery.headroom.min.js"></script>
+    <script src="assets/js/template.js"></script>
 </body>
 </html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +7,12 @@
     <meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
 
     <title>Rent a bike - Location vélo </title>
-
+    <script src="https://kit.fontawesome.com/c8975d4899.js"></script>
     <link rel="shortcut icon" href="assets/images/gt_favicon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Cuprum|Lobster&display=swap" rel="stylesheet"> 
+    
     <!-- Custom styles for our template -->
     <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -26,43 +24,64 @@
 	<![endif]-->
 </head>
 
-<body>
-    <header id="mainnav" class="row">
+    <body>
+        <!--nav bar et carousel -->
+            <header id="mainnav" class="row">
+                <!--------bar de navigation -------->
+                <div class="col-12 ">
+                
+                    <div id="logo" class="row ml-3">
+                        
+                            <a class="navbar-brand" href="#"><img src="assets/images/logo.png"  width="150"
+                            height="145"></a>  
+                            <h1 class="text-success">Rent a bike<h2>
+                        
+                    </div>
 
-        <div class="col-md-12 mt-2 col-12 ">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="m-auto" width="150"
-                        height="145"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav form-inline">
+                    
+
+                    <div class="col-12">                    
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+                        
+                
+                
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav form-inline">
                         <li class="nav-item active">
-                            <a class="nav-link  h3" href="index.html">Acceuil<span class="sr-only">(current)</span></a>
+                            <a class="nav-link  h2" href="index.html">Accueil<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item  ">
-                            <a class="nav-link h3" href="location.html">Location</a>
+                            <a class="nav-link h2" href="location.html">Location</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle nav-link h3" data-toggle="dropdown" href="#"
+                            <a class="nav-link dropdown-toggle nav-link h2" data-toggle="dropdown" href="#"
                                 role="button" aria-haspopup="true" aria-expanded="false">Nos vélos</a>
                             <div class="dropdown-menu">
-                                <a class="nav-link h5" href="#">Vélo classique</a>
-                                <a class="nav-link h5" href="#">vélo électrique</a>
+                                <a class="nav-link h5 ml-3" href="#" data-toggle="modal" data-target="#exampleModalScrollable">Vélo classique</a>
+                                <a class="nav-link h5 ml-3" href="#" data-toggle="modal" data-target="#exampleModalScrollable1" >vélo électrique</a>
 
                             </div>
                         </li>
-                    </ul>
+                        </ul>
+                        </div>
+                        <a href="signin.html" type="button" class="btn btn-success">
+                        <i class="fas fa-user"></i>
+                        <span class="sr-only"></span>
+                        </a>
+                        </nav>
+
+                    </div>
+
+
+
                 </div>
-                <a href="signin.html" type="button" class="btn border">
-                    <i class="text-light" aria-hidden="true">SIGN IN / SIGN UP</i>
-                    <span class="sr-only"></span>
-                </a>
-            </nav>
-        </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <!--------fin bar de navigation -------->
+            <!--------Début carousel -------->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -70,13 +89,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="https://picsum.photos/id/212/2000/850" alt="First slide">
+                    <img class="d-block w-100" src="https://picsum.photos/id/212/2200/850" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://picsum.photos/id/1048/2000/850" alt="Second slide">
+                    <img class="d-block w-100" src="https://picsum.photos/id/1048/2200/850" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://picsum.photos/id/76/2000/850" alt="Third slide">
+                    <img class="d-block w-100" src="https://picsum.photos/id/76/2200/850" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -87,99 +106,131 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div>
+            </div>
+            <!--------fin carousel -------->
+            </header>
+        <!--fin navbar et carousel-->
 
 
-
-
-
-
-    </header>
-
-
-    <!-- Intro -->
-    <div class="container text-center mb-3">
-        <div class="jumbotron top-space">
-            <h2 class="thin">Location de vélos classiques et électriques </h2>
-            <p>Vous allez pouvoir louer des vélos dans les villes de Paris, Lyon, Lille, Bordeaux. nous proposons des
+        <!-- Intro -->
+            <div class="container text-center mb-3">
+            <div class="jumbotron top-space">
+            <h2 class="text-info ">Location de vélos classiques et électriques </h2>
+            <p >Vous allez pouvoir louer des vélos dans les villes de Paris, Lyon, Lille, Bordeaux. nous proposons des
                 vélos classiques mais aussi des vélos électriques. vous y trouveriez des tarifs imbattables dans nos
                 villes partenaire. vous pourriez louer un vélo à l'heure mais aussi obtenir un tarif dégressif si vous
-                le louer plus longtemps ( voir tarif). <Br> <strong> Vous etes professionnelle? </strong><br> Afin de
+                le louer plus longtemps ( voir tarif). <Br> <strong class="text-info"> Vous etes professionnelle? </strong><br> Afin de
                 faciliter le transion vers un monde avec moins de pollution, vous allez pouvoir obtenir des tarifs
                 réduits qui défirent toute concurrence. </p>
-            <p class="text-right"><a href="#tarif" class="btn btn-success btn-large text-light">Learn more »</a></p>
-        </div>
-    </div>
-    <!-- /Intro-->
-    <div class="container-fluid">
-        <img class="mt-5" src="assets/images/vt.png">
+            <p class="text-right"><a href="#tarif" class="btn btn-success btn-large text-light">NOS TARIF »</a></p>
+            </div>
+            </div>
+        <!-- /Intro-->
 
-    </div>
 
-    <!-- Highlights - jumbotron -->
+        <!--Banniere info vélos vert et bleu-->
+            <div class="row">
+            <div class=" col-12 velo-container" style="background-image:url('assets/images/background-bloc-velo.png')">
+            <h1 class="main-subtitle-norwd knockout rotated mb-3 text-center text-white">2 FOIS PLUS DE POSSIBILITÉS</h1>
+            <div class="row d-flex flex-row justify-content-center align-items-stretch">
+            <div class="side-column col-md-3  mt-3 mb-3 d-flex flex-column align-items-center justify-content-center">
+            <img class="img-velo img-fluid mb-3" style="min-width:100px;" src="assets/images/force_meca.png?v=1">
+            <h3 class="text-white mb-3">CLASSIQUE</h3>
+            <p   style="color: rgb(255, 255, 255); font-family: Nunito, sans-serif; font-size: 16px; text-align: center;min-width:180px;">
+             Besoin de retrouver le plaisir de pédaler?<br>
+             Le vélo classique est fait pour vous !
+            </p>
+            <button type="button"  class="btn btn-info border" data-toggle="modal" data-target="#exampleModalScrollable">
+             Vélo classique
+            </button>
+            </div>
+            <div class="middle-column col-md-6 mt-3 mb-3 d-flex flex-column align-items-center justify-content-center">
+            <img class="img-velo img-fluid" src="assets/images/velo.png?v=1">   
+            </div>
+            <div  class="side-column col-md-3 mt-3 mb-3 d-flex flex-column align-items-center justify-content-center">
+            <img class="img-velo img-fluid mb-3" src="assets/images/force_eclair.png?v=1">
+            <h3 class="text-white mb-3">ÉLECTRIQUE</h3>
+            <p class="texte2" style="color: rgb(255, 255, 255); font-family: Nunito, sans-serif; font-size: 16px; text-align: center;min-width:180px;">
+                Besoin du souffle du vent pour vous sentir vivant ?<br>
+                Le vélo électrique est fait pour vous !
+            </p>
+            <button type="button" class="btn btn-success border" data-toggle="modal" data-target="#exampleModalScrollable1">
+             Vélo électrique
+            </button>
 
-    <div class="container">
+            </div>
+            </div>
+            </div>
+        <!--/fin banniere info velo vert et bleu-->
 
-        <h3 id="tarif" class="text-center thin">Nos forfaits </h3>
 
-        <div class="row">
+        <!--choix Tarif-->
+
+    
+
+            <div class="container">
+
+            <h2 id="tarif" class="text-info text-center">Nos forfaits </h2>
+
+            <div class="row">
             <div class="col-md-3 col-sm-6 highlight">
                 <div class="h-caption">
-                    <h4><i class="fa fa-cogs fa-5"></i>Forfait heures</h4>
+                    <h4 class="text-info" ><i class="fas fa-user-clock"></i>Forfait heures</h4>
                 </div>
                 <div class="h-body text-center">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aliquid adipisci aspernatur.
                         Soluta quisquam dignissimos earum quasi voluptate. Amet, dignissimos, tenetur vitae dolor quam
-                        iusto assumenda hic c reprehenderit reprehenderit?</p>
-                    <a name="" id="" class="btn btn-success" href="#" role="button">+</a>
+                        iusto assumenda hic c reprehenderit </p>
+                    <a name="" id="" class="btn btn-success" href="location.html" role="button">Je suis en je reserve vite !</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 highlight">
                 <div class="h-caption">
-                    <h4><i class="fa fa-flash fa-5"></i>Forfait jours</h4>
+                    <h4 class="text-info"><i class="fas fa-biking"></i></i>Forfait jours</h4>
                 </div>
                 <div class="h-body text-center">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, commodi, sequi quis ad
                         fugit omnis cumque a libero error nesciunt molestiae repellat quos perferendis numquam quibusdam
                         rerum repellendus laboriosam reprehenderit!
                     </p>
-                    <a name="" id="" class="btn btn-success" href="#" role="button">+</a>
+                    <a name="" id="" class="btn btn-success" href="location.html" role="button">C'est partis pour la journnée vélo !</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 highlight">
                 <div class="h-caption">
-                    <h4><i class="fa fa-heart fa-5"></i>Forfait semaines</h4>
+                    <h4 class="text-info"><i class="fa fa-heart fa-5"></i>Forfait semaines</h4>
                 </div>
                 <div class="h-body text-center">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, vitae, perferendis,
                         perspiciatis nobis voluptate quod illum soluta minima ipsam ratione quia numquam eveniet eum
                         reprehenderit dolorem dicta nesciunt corporis?</p>
-                    <a name="" id="" class="btn btn-success" href="#" role="button">+</a>
+                    <a name="" id="" class="btn btn-success" href="location.html" role="button">Je reserve malin <br> ;) </a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 highlight">
                 <div class="h-caption">
-                    <h4><i class="fa fa-smile-o fa-5"></i>Forfait mois</h4>
+                    <h4 class="text-info"><i class="fa fa-smile-o fa-5"></i>Forfait mois</h4>
                 </div>
                 <div class="h-body text-center">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, excepturi, maiores, dolorem
                         quasi reprehenderit illo accusamus nulla minima repudiandae quas ducimus reiciendis odio sequi
                         atque temporibus facere corporis eos expedita?
-                    </p><a name="" id="" class="btn btn-success" href="#" role="button">+</a>
+                    </p><a name="" id="" class="btn btn-success" href="location.html" role="button">Je reserve Ecolo/econo <br>!</a>
                 </div>
             </div>
-        </div>
-    </div>
-    </div>
+            </div>
+            </div>
+            </div>
 
-    <!-- /Highlights -->
+    
+        <!--/ choix tarif -->
 
 
-    <!-- container ville  -->
-    <div class="jumbotron top-space">
-        <div class="container">
+        <!-- container ville  -->
+            <div class="jumbotron top-space">
+            <div class="container">
 
-            <h2 class="text-center top-space">Choisis ta villes </h2>
+            <h2 class="text-info text-center top-space">Choisis ta villes </h2>
             <br>
 
             <div class="row">
@@ -192,45 +243,31 @@
                     <a><img src="assets/images/paris.jpg" alt="paris"></a>
                 </div>
                 <div class="col-sm-3 text-center ">
-                    <h3>Lyon</h3>
+                    <h3 >Lyon</h3>
                     <img src="assets/images/lyon.png" alt="lyon">
 
                     </p>
                 </div>
                 <div class="col-sm-3 text-center">
-                    <h3>Bordeaux</h3>
+                    <h3 >Bordeaux</h3>
                     <img src="assets/images/bordeaux.jpg" alt="bordeaux">
                 </div>
             </div>
-            <!-- /row -->
-        </div>
-
-    </div>
-    <!-- /container -->
-
-    <!-- Social links -->
-    <section id="social">
-        <div class="container">
-            <div class="wrapper clearfix">
-                <!-- AddThis Button BEGIN -->
-                <div class="addthis_toolbox addthis_default_style">
-                    <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-                    <a class="addthis_button_tweet"></a>
-                    <a class="addthis_button_linkedin_counter"></a>
-                    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-                </div>
-                <!-- AddThis Button END -->
             </div>
-        </div>
-    </section>
-    <!-- /social links -->
-    <section class="container-full top-space">
-        <div id="map"></div>
-    </section>
+            </div>
+        <!-- /container ville -->
 
-    <footer id="footer">
 
-        <div class="footer1">
+        <!-- Map google-->
+            <section class="container-full top-space">
+            <div id="map"></div>
+            </section>
+        <!--fin map google -->
+
+        <!--footer-->
+            <footer id="footer">
+
+            <div class="footer1">
             <div class="container">
                 <div class="row">
 
@@ -240,52 +277,38 @@
                             <p>+234 23 9873237<br>
                                 <a href="mailto:#">some.email@somewhere.com</a><br>
                                 <br>
-                                234 Hidden Pond Road, Ashland City, TN 37015
+                                234 place des quais, bordeaux, 33000
                             </p>
                         </div>
                     </div>
 
                     <div class="col-md-3 widget">
-                        <h3 class="widget-title">Follow me</h3>
-                        <div class="widget-body">
-                            <p class="follow-me-icons clearfix">
-                                <a href=""><i class="fa fa-twitter fa-2"></i></a>
-                                <a href=""><i class="fa fa-dribbble fa-2"></i></a>
-                                <a href=""><i class="fa fa-github fa-2"></i></a>
-                                <a href=""><i class="fa fa-facebook fa-2"></i></a>
-                            </p>
-                        </div>
+                      
                     </div>
 
                     <div class="col-md-6 widget">
-                        <h3 class="widget-title">Text widget</h3>
+                        <h3 class="widget-title"></h3>
                         <div class="widget-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam
-                                architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque
-                                voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad
-                                id expedita cupiditate repellendus possimus unde?</p>
-                            <p>Eius consequatur nihil quibusdam! Laborum, rerum, quis, inventore ipsa autem repellat
-                                provident assumenda labore soluta minima alias temporibus facere distinctio quas
-                                adipisci nam sunt explicabo officia tenetur at ea quos doloribus dolorum voluptate
-                                reprehenderit architecto sint libero illo et hic.</p>
+                           
+                            <p>Aujourd’hui, les villes font de plus en plus d’efforts pour réintroduire le vélo dans le paysage urbain. Entre les pistes cyclables, les parking à vélo, les vélibs et les subventions qui fleurissent un peu partout, qui a encore une bonne raison de ne pas s’y mettre ? Cependant, attention au traffic qui peut être turbulent dans les grandes villes. Un bon vélo de ville se doit d’être fiable et bien équipé (éclairages, garde-boue, sonnette, dynamo de moyeu, béquille...). Lorsque l’on rentre du travail à vélo et que les rues deviennent plus sombres, il est primordial de bien voir et de bien être vu des autres usagers. Puis, avouons-le, on adore le design un peu retro des vélos de ville hollandais, ceux qui ont le plus la côte en ce moment. Vous n’avez plus à choisir entre sécurité et look stylé !</p>
                         </div>
                     </div>
 
                 </div> <!-- /row of widgets -->
             </div>
-        </div>
+            </div>
 
-        <div class="footer2">
+         <div class="footer2">
             <div class="container">
                 <div class="row">
 
                     <div class="col-md-6 widget">
                         <div class="widget-body">
                             <p class="simplenav">
-                                <a href="#">Acceuil</a> |
-                                <a href="about.html">A propos</a> |
-                                <a href="contact.html">Contact</a> |
-                                <b><a href="signup.html">Sign up</a></b>
+                                <a href="#">Accueil</a> |
+                                <a href="location.html">Location</a> |
+                                <a href="#">Vélo</a> |
+                                <b><a href="signup.html">S'inscrire</a></b>
                             </p>
                         </div>
                     </div>
@@ -299,33 +322,87 @@
                     </div>
 
                 </div> <!-- /row of widgets -->
+                 </div>
+                 </div>
+            </footer>
+        <!--/ footer-->
+
+
+        <!--modals-->
+            <!--modal vélo classique-->
+          <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalScrollableTitle">Vélo classique</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-        </div>
-    </footer>
+            <div class="modal-body">
+                    <img class="mt-5" src="assets/images/velo.jpg">
+                    <div class="text-center">
+                        <h2>Vélo classique</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum tempora error itaque hic dolor ipsum corrupti    quidem laudantium nulla fugit. Quibusdam et, dignissimos molestiae delectus officia asperiores alias architecto placeat.</p>
+                   </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Retour</button>
+              <a type="button" class="btn btn-success" href="location.html">Louez moi !</a>
+            </div>
+          </div>
+            </div>
+            </div>
+
+            <!--/ Modal vélo classique-->
+
+            <!--modal vélo electrique-->
+            <div class="modal fade" id="exampleModalScrollable1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalScrollableTitle1">Vélo électrique</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <img class="mt-5" src="assets/images/velo1.jpg">
+                    <div class="text-center">
+                        <h2>Vélo électrique</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum tempora error itaque hic dolor ipsum corrupti    quidem laudantium nulla fugit. Quibusdam et, dignissimos molestiae delectus officia asperiores alias architecto placeat.</p>
+                   </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal1">Retour</button>
+              <a type="button" class="btn btn-success" href="location.html">Louez moi !</a>
+            </div>
+          </div>
+            </div>
+            </div>
+            <!-- /modal velo electrique-->
+        <!--/modals-->
+
+        <!--scripts-->    
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 
 
+            <script src="assets/js/headroom.min.js"></script>
+            <script src="assets/js/jQuery.headroom.min.js"></script>
+            <script src="assets/js/template.js"></script>
 
+            <!-- Google Maps -->
+            <script src="https://maps.googleapis.com/maps/api/js?key=&amp;sensor=false&amp;extension=.js"></script>
+            <script src="assets/js/google-map.js"></script>
+        <!--/scripts-->
 
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-
-    <script src="assets/js/headroom.min.js"></script>
-    <script src="assets/js/jQuery.headroom.min.js"></script>
-    <script src="assets/js/template.js"></script>
-
-    <!-- Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=&amp;sensor=false&amp;extension=.js"></script>
-    <script src="assets/js/google-map.js"></script>
-</body>
-
+    </body>
 </html>
