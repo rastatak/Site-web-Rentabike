@@ -16,15 +16,11 @@
   <link rel="stylesheet" href="../assets/css/bootstrap-theme.css" media="screen">
   <link rel="stylesheet" href="../assets/css/main.css">
 
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-	<script src="assets/js/html5shiv.js"></script>
-	<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
+
 </head>
 
 <body>
-  <!--------bar de navigation -------->
+
   <!--------bar de navigation -------->
   <header id="mainnav" class="row">
     <!--nav bar et carousel -->
@@ -163,28 +159,28 @@
   <div class="container">
     <h3 class="text-left">Ajouter un article :</h3><br>
 
-    <form method="post" action="show.php">
+    <form method="post" action="PHP/article.php">
       <div class="form-group">
         <label for="text">Nom de l'article :</label>
-        <input type="text" class="form-control">
+        <input type="text" name="nomArticle" class="form-control">
       </div>
       <div class="form-group">
         <label>Catégorie :</label>
-        <input type="text" class="form-control">
+        <input type="text" name="categorieArticle" class="form-control">
       </div>
       <div class="form-group">
         <label for="text">Quantité des stock :</label>
-        <input type="number" class="form-control">
+        <input type="number" name="stock" class="form-control">
       </div>
 
       <div class="form-group">
         <label for="text">Prix :</label>
-        <input type="price" class="form-control">
+        <input type="number" name="prixArticle" class="form-control">
       </div>
 
       <div class="custom-file">
         <input type="file" class="custom-file-input" id="inputGroupFile01">
-        <label class="custom-file-label" for="inputGroupFile01">Importer une image...</label>
+        <label class="custom-file-label" name="imageArticle" >Importer une image...</label>
       </div>
 
 
@@ -192,7 +188,7 @@
         <label class="form-check-label">
           <input class="form-check-input" type="checkbox"> Comfirmer
         </label>
-        <p class="text-right"><button type="button" class="btn btn-success">Ajouter</button>
+        <p class="text-right"><button type="submit" class="btn btn-success">Ajouter</button>
         </p>
 
       </div>
@@ -347,7 +343,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Are you sure to delete this article ?</h5>
+          <h5 class="modal-title" id="exampleModalLongTitle">êtes-vous sûr de vouloir supprimer cet article ?</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -372,7 +368,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form method="post" action="article.php">
+          <form method="post" action="a">
             <div class="form-group">
               <label for="text">Nom de l'article :</label>
               <input type="text" class="form-control">
@@ -401,7 +397,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-success">Save article</button>
+          <button type="submit" class="btn btn-success">Save article</button>
         </div>
       </div>
     </div>
