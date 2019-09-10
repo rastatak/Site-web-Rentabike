@@ -85,7 +85,7 @@
 	<!-- container -->
 	<div class="container">
 
-      <h3 class="text-center ">Bienvenue, Admin</h3>
+      <h2 class="text-center ">Bienvenue, Admin</h2>
       <hr>
       <div class="border">
         <table class="table table-striped">
@@ -159,9 +159,39 @@
   <!-- /container -->
 
   <div class="container">
+    <h3 class="text-left">Ajouter un article :</h3><br>
 
-      <button type="button" class="btn btn-success">Ajouter</button>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <label for="text">Nom de l'article :</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label >Catégorie :</label>
+        <input type="text" class="form-control" >
+      </div>
+      <div class="form-group">
+          <label for="text">Quantité des stock :</label>
+          <input type="number" class="form-control">
+        </div>
 
+        <div class="form-group">
+            <label for="text">Prix :</label>
+            <input type="price" class="form-control">
+          </div>
+
+
+      <div class="form-group form-check">
+        <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Comfirmer
+          </label>
+     
+      </div>
+      <p class="text-right"><button type="button" class="btn btn-success">Ajouter</button>
+      </p>
+    </form>
+
+   
 
   </div>
   
@@ -293,6 +323,73 @@
           </div>
         </div>
       </div>	
+
+    <!--/modal-->
+      <!-- modal 1 edit article -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Are you sure to delete this article ?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+     
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modal 2 edit articles-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form action="/action_page.php">
+            <div class="form-group">
+              <label for="text">Nom de l'article :</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label >Catégorie :</label>
+              <input type="text" class="form-control" >
+            </div>
+            <div class="form-group">
+                <label for="text">Quantité des stock :</label>
+                <input type="number" class="form-control">
+              </div>
+      
+              <div class="form-group">
+                  <label for="text">Prix :</label>
+                  <input type="price" class="form-control">
+                </div>
+      
+      
+            <div class="form-group form-check">
+              <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox"> Comfirmer
+                </label>
+           
+            </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Save article</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
